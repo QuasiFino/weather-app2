@@ -43,6 +43,10 @@ function Weatherdetails({
     let date = new Date(sec * 1000);
     let timeStr = `${date.getHours()}:${date.getMinutes()}`;
 
+    // useEffect(() => {
+    //     setCurrentTime(new Date().toLocaleString());
+    // }, [currentTime]);
+
     return (
         <>
             <article className="widget">
