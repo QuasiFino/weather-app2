@@ -43,6 +43,7 @@ function SearchMain() {
             <div className="wrap">
                 <div className="search">
                     <input 
+                        className="searchTermf"
                         type="search" 
                         placeholder="Search city..." 
                         id="search" 
@@ -51,13 +52,14 @@ function SearchMain() {
                             setSearchTerm(e.target.value);
                         }}
                     />
+                    <button 
+                        className="searchButton"
+                        onClick={getWeatherInfo}
+                    >
+                        Search
+                    </button>
                 </div>
-                <button 
-                    className="searchButton"
-                    onClick={getWeatherInfo}
-                >
-                    Search
-                </button>
+
             </div>
             <Weatherdetails {...tempInfo}/>
         </>
